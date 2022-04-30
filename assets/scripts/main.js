@@ -1,5 +1,6 @@
 var companiesContainer = document.querySelector('.companies');
 var loader = document.querySelector('.loader');
+var apiBaseURL = 'https://fakerapi.it/api/v1';
 
 function renderCompanies(companies) {
 
@@ -23,7 +24,7 @@ function renderCompanies(companies) {
 function getCompanies() {
     // show loader
     loader.classList.remove('hidden');
-    fetch(`https://fakerapi.it/api/v1/companies`)
+    fetch(`${apiBaseURL}/companies`)
         .then(res => res.json())
         .then(data => {
             renderCompanies(data.data);
