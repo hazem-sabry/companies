@@ -9,7 +9,7 @@ function renderCompanies(companies) {
         companiesContainer.innerHTML += `
             <article class="company">
                 <figure class="company__poster">
-                    <img src="${company.image}" alt="Company Logo" loading="lazy" >
+                    <img src="${company.image}" alt="Company Logo" >
                 </figure>
                 <div class="company__info">
                     <h1>${company.name}</h1>
