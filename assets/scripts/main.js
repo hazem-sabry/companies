@@ -4,6 +4,7 @@ var apiBaseURL = 'https://fakerapi.it/api/v1';
 
 function renderCompanies(companies) {
 
+    console.log(companies);
     companies.forEach(company => {
         companiesContainer.innerHTML += `
             <article class="company">
