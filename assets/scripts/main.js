@@ -1,10 +1,9 @@
-var companiesContainer = document.querySelector('.companies');
-var loader = document.querySelector('.loader');
-var apiBaseURL = 'https://fakerapi.it/api/v1';
+const companiesContainer = document.querySelector('.companies');
+const loader = document.querySelector('.loader');
+const apiBaseURL = 'https://fakerapi.it/api/v1';
 
 function renderCompanies(companies) {
 
-    console.log(companies);
     companies.forEach(company => {
         companiesContainer.innerHTML += `
             <article class="company">
